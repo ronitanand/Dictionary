@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+<script src="https://use.fontawesome.com/9b81c7983e.js"></script>
+
+<link rel="stylesheet" href="/css/meaning.css">
+</head>
+<body>
+    <header>
+    <p>Dictionary.com</p>
+    <form action="/dictionary/browse/" method="POST">
+    <input type="search" name="searchedTerm" id="search-box" placeholder="Search The Word" value="<%= word  %>" autocomplete="off">
+    <button type="submit"><i class="fa fa-search" aria-hidden="true"></i>
+    </button>
+    </form>
+    </header>
+    <div class="meaning-box">
+        <p><span class="word"><%= word_data.word %></span><span class="phonetic" ><%= '['+word_data.phonetic+']'%> </span><span><img id='<%= word_data.phonetics[0].audio  %> ' src="/demostration.png" onclick="play(this.id)" alt=""></span></p>
+        <hr>
+        <% word_data.meanings.forEach((element) => {%>
+            <p class="word-type"><%= element.partOfSpeech %></p>
+            <ol>
+            <% element.definitions.forEach((def)=>{ %>
+                
+                    <li><%= def.definition %></li>
+                
+            
+            <%})%>
+            </ol>
+        <% })%>
+        
+        
+    </div>
+    <script src="/app.js"></script>
+</body>
+</html>

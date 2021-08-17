@@ -1,0 +1,106 @@
+/* #00248B */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: rgb(240, 233, 233);
+}
+
+header{
+    color: white;
+    background-color: #00248B;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+header p{
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+header form{
+    
+    display: flex;
+    justify-content: center;
+}
+
+#search-box{
+    all: unset;
+    background-color: white;
+    font-size: 25px;
+    border-bottom-left-radius: 2px;
+    border-top-left-radius: 2px;
+    padding-left: 13px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    max-width:1000px ;
+    width: 80%;
+    color: black;
+    
+}
+
+button {
+    all: unset;
+    background-color: white;
+    color: black;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    padding-right:10px ;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.meaning-box{
+    background-color: white;
+    margin:0 auto;
+    width: 80% ;
+    max-width: 700px;
+    padding: 20px;
+    margin-top: 60px;
+}
+
+ol{
+    list-style-type:decimal;
+
+}
+
+.word{
+    margin-right: 20px;
+    letter-spacing: 1px;
+    font-size: 49px;
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.phonetic{
+    color: grey;
+    font-size: 26px;
+    margin-right: 20px;
+}
+
+img{
+    width: 30px;
+    cursor: pointer;
+    
+}
+
+img:hover{
+    transform: scale(1.3);
+}
+
+.word-type{
+    font-size:1.5rem ;
+    font-weight: 300;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+ol li {
+    margin-left: 28px;
+    font-size: 1.3rem;
+}
